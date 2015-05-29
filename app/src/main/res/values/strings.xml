@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MillingCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cutting_speed_vc">CuttingSpeedVcActivity</string>
+
+    <string name="cutting_speed_vc">Cutting Speed - v<sub>c</sub> [m/min.]</string>
+    <string name="cutting_speed_n">Cutting Speed - n [rpm]</string>
+    <string name="cutting_speed">Cutting Speed</string>
+
+    <string name="vc_equal"><b>v<sub>c</sub> = </b></string>
+    <string name="D_equal"><b>D = </b></string>
+    <string name="n_equal"><b>n = </b></string>
+    <string name="vc"><b>v<sub>c</sub></b> - cutting speed</string>
+    <string name="D"><b>D</b> - cutting diameter</string>
+    <string name="n"><b>n</b> - main axis spindle speed</string>
+    <string name="parameters">Parameters</string>
+    <string name="title_activity_cutting_speed_n">CuttingSpeedNActivity</string>
+    <string name="divide">You mustn\'t divide by zero!</string>
+
+    <string name="vc_radio"><b>v<sub>c</sub> [m/min.]</b></string>
+    <string name="n_radio"><b>n [rpm]</b></string>
+    <string name="title_activity_feed_per_tooth">FeedPerToothActivity</string>
+
+    <string name="feed_per_tooth_fz">Feed Per Tooth f<sub>z</sub> [mm]</string>
+    <string name="feed_fer_tooth">Feed Per Tooth</string>
+    <string name="fz_equal"><b>f<sub>z</sub> = </b></string>
+    <string name="vf_equal"><b>v<sub>f</sub> = </b></string>
+    <string name="zc_equal"><b>z<sub>c</sub> = </b></string>
+
+    <string name="fz"><b>f<sub>z</sub> </b>- feed per tooth</string>
+    <string name="vf"><b>v<sub>f</sub> </b>- table feed per min.</string>
+    <string name="zc"><b>z<sub>c</sub> </b>- insert number</string>
+
+    <string name="table_feed_vf">Table Feed - v<sub>f</sub> [mm/min.]</string>
+    <string name="table_feed">Table Feed</string>
+    <string name="title_activity_table_feed">TableFeedActivity</string>
+
+    <string name="unit_vc">[m/min.]</string>
+    <string name="unit_vf">[mm/min.]</string>
+    <string name="unit_n">[rpm]</string>
+    <string name="unit_zc">[pcs.]</string>
+    <string name="unit_fz">[mm]</string>
+    <string name="unit_D">[mm]</string>
+
+    <color name="white">#FFFFFF</color>
+    <color name="background">#E8E8E8</color>
+    <color name="result">#5F5F5F</color>
+    <color name="title">#848484</color>
+</resources>

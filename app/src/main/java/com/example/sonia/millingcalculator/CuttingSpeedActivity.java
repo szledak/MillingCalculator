@@ -1,6 +1,8 @@
 package com.example.sonia.millingcalculator;
 
 import android.app.Activity;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -80,8 +82,15 @@ public class CuttingSpeedActivity extends Activity implements TextWatcher {
             }
         } else {
             if (s.length() != 0) {
-                cuttingSpeedN.setCuttingDiameter(editParameterN2.getText().toString(), rdbParameter2.isChecked());
-                cuttingSpeedN.setCuttingSpeed(editParameterN1.getText().toString());
+
+                if(TextUtils.isEmpty(editParameterN2.getText().toString())){
+                    editParameterN2.getBackground().setColorFilter(Color.RED, PorterDuff.Mode.SRC_ATOP);
+                }else{
+                    cuttingSpeedN.setCuttingDiameter(editParameterN2.getText().toString(), rdbParameter2.isChecked());
+                    cuttingSpeedN.setCuttingSpeed(editParameterN1.getText().toString());
+                    editParameterN2.getBackground().setColorFilter(Color.DKGRAY, PorterDuff.Mode.SRC_ATOP);
+
+                }
 
                 if(!TextUtils.isEmpty(editParameterN1.getText().toString()) && !TextUtils.isEmpty(editParameterN2.getText().toString()))
                     txtResultN.setText(cuttingSpeedN.returnCuttingSpeedN());

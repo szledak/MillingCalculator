@@ -18,7 +18,7 @@ public class FeedPerTooth {
     }
 
     public void setMainAxisSpindleSpeed(String mainAxisSpindleSpeed) {
-        if(TextUtils.isEmpty(mainAxisSpindleSpeed) || mainAxisSpindleSpeed.equals("0.0") || mainAxisSpindleSpeed.equals("0"))
+        if(mainAxisSpindleSpeed.equals("0"))
             Toast.makeText(context, context.getResources().getString(R.string.divide), Toast.LENGTH_LONG).show();
         else
             this.mainAxisSpindleSpeed = Double.parseDouble(mainAxisSpindleSpeed);
@@ -32,7 +32,7 @@ public class FeedPerTooth {
     }
 
     public void setInsertNumber(String insertNumber) {
-        if(TextUtils.isEmpty(insertNumber) || insertNumber.equals("0.0") || insertNumber.equals("0"))
+        if(insertNumber.equals("0"))
             Toast.makeText(context, context.getResources().getString(R.string.divide), Toast.LENGTH_LONG).show();
         else
             this.insertNumber = Double.parseDouble(insertNumber);

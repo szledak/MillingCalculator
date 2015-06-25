@@ -2,6 +2,7 @@ package com.example.sonia.millingcalculator;
 
 import android.content.Context;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.Toast;
 
 /**
@@ -48,7 +49,7 @@ public class CuttingSpeed {
 
     public void setCuttingDiameter(String cuttingDiameter, Boolean radio) {
         if(radio){
-            if(TextUtils.isEmpty(cuttingDiameter) || cuttingDiameter.equals("0.0") || cuttingDiameter.equals("0")){
+            if(cuttingDiameter.equals("0")){
                 Toast.makeText(context, context.getResources().getString(R.string.divide), Toast.LENGTH_LONG).show();
             }
             else
